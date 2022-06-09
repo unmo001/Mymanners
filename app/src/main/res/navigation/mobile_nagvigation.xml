@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_nagvigation"
+    app:startDestination="@id/TutorialFragment">
+
+    <fragment
+        android:id="@+id/TutorialFragment"
+        android:name="com.example.mymannars.ui.tutorial.TutoralFragment"
+        android:label="fragment_tutorial"
+        tools:layout="@layout/fragment_tutorial" />
+    <fragment
+        android:id="@+id/tutorialFragment_second"
+        android:name="com.example.mymannars.TutorialFragment_second"
+        android:label="fragment_tutorial_second"
+        tools:layout="@layout/fragment_tutorial_second" />
+    <fragment
+        android:id="@+id/tutorialFragment_third"
+        android:name="com.example.mymannars.TutorialFragment_third"
+        android:label="fragment_tutorial_third"
+        tools:layout="@layout/fragment_tutorial_third" />
+</navigation>
