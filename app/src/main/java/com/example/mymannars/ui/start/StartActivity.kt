@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.mymannars.R
+import com.example.mymannars.TutorialActivity
 import com.example.mymannars.databinding.ActivityStartBinding
 import com.example.mymannars.ui.tutorial.TutoralFragment
 class StartActivity : AppCompatActivity() {
@@ -14,12 +15,12 @@ class StartActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
 
-       binding.startBtn.setOnClickListener{
-           supportFragmentManager.beginTransaction().apply{
-               replace(com.google.android.material.R.id.container,TutoralFragment())
-               addToBackStack(null)
-               commit()
-           }
-       }
+
+        binding.startBtn.setOnClickListener{
+            val intent = Intent(application,TutorialActivity::class.java)
+            startActivity(intent)
+        }
+
+
     }
 }
